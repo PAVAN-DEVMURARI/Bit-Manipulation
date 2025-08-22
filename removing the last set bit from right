@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	//removing the last set bit from right
+	
+	int n=13;
+	n = n&(n-1);
+	cout << n;
+
+}
