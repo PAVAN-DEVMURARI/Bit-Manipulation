@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	//Toggle the ith bit - (set 1 to 0 and 0 to 1)
+	
+	int n=13;
+	int i=2;
+	
+	n = n^(1<<i);
+	cout << n<<endl;
+	
+	i=1;
+	n = n^(1<<i);
+	cout << n;
+	
+	
+
+}
