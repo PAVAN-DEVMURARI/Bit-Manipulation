@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	
+	//Clear the ith bit 
+	
+	int n = 13;
+	int i = 2;
+	
+	n = n & ~(1<<i);
+	cout << n;
+
+}
