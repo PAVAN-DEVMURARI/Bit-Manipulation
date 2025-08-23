@@ -1,0 +1,43 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int count_set_bit(int n)
+{
+    int count = 0;
+    while (n>1)
+    {
+        if (n&1) count+=1;
+        n = n >> 1;
+    }
+    if (n==1)
+    count+=1;
+    
+    return count;
+}
+
+int main() {
+	// your code goes here
+	//count the number of set bits 
+	
+	int n = 13;
+	int m = count_set_bit(n);
+	cout << m << endl;
+	
+	// another method with stl 
+	cout << __builtin_popcount(n) ;
+	
+	//another method 
+	int o=84;
+	int cnt=0;
+	
+	while (o!=0)
+	{
+	    o = o&(o-1);
+	    cnt++;
+	}
+	cout <<endl;
+	cout << cnt << endl;
+	
+	
+
+}
